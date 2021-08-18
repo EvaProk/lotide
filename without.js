@@ -1,4 +1,4 @@
-const assertArraysEqual = function (actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   if (actual.length !== expected.length) {
     console.log(`⛔️ ⛔️ ⛔️Assertion Failed: ${actual} !== ${expected}`);
     return;
@@ -16,19 +16,19 @@ const assertArraysEqual = function (actual, expected) {
 
 
 
-const without = function (sorce, itemsToRemove) {
-  let newArray = sorce.filter(function (src) {
+const without = function(sorce, itemsToRemove) {
+  let newArray = sorce.filter(function(src) {
     return !itemsToRemove.includes(src);
   });
   return newArray;
-}
+};
 
 
 
 
 const words = ["hello", "world", "lighthouse"];
 console.log(without([1, 2, 3], [1]));
-console.log(without(["1", "2", "3"], [1, 2, "3"]))
+console.log(without(["1", "2", "3"], [1, 2, "3"]));
 console.log(without(words, ["lighthouse"]));
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ['1', '2']);
