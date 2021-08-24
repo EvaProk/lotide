@@ -1,4 +1,4 @@
-const flatten = function (array) {
+const flatten = function(array) {
   let newArray = [];
   for (let element of array) {
     if (Array.isArray(element)) {
@@ -14,3 +14,5 @@ const flatten = function (array) {
 
 console.log(flatten(['eva', 'valik', [3, 4], 5, ['roma']]));
 console.log(flatten([1, 2, [3, 4], 5, [6]]));
+
+module.exports = flatten;

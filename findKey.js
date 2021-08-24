@@ -35,3 +35,6 @@ assertEqual(findKey({
   "Day5": { lesson: "Biology" },
   "Day6": { lesson: "Math" }
 }, x => x.lesson === "Math"), 'Day1');
+
+module.exports = findKey;
+
